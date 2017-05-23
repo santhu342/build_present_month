@@ -3,7 +3,7 @@
 <div class='row'>
 <div class="col-sm-3 col-md-3" >
             
-  <h3>Attendence Details</h3>
+  <h3>Present Month Details</h3>
   <div class="panel panel-primary">
     <div class="panel-heading">Month & Year</div>
     <div class="panel-body"> 
@@ -15,17 +15,15 @@
     $month_end = strtotime('last day of this month', time());
     $end_day = date('j', $month_end);
     
-    echo $st_day." ".$end_day;
-    
-    //$st_day = $st_day-1;
     if($st_day == 7)
     {
         $st_day = 0;
     }
     
+    echo "<p>".date('F \& Y')."</p>";
     
     ?>
-    <p>Attendence </p>
+    <p> </p>
     
     <div class="table-responsive " style="border: 1px solid #c5c5c5; padding: .2em .2em 0;">
     <table style="width: 100%; margin: 0 0 .4em;  ">
